@@ -31,7 +31,7 @@ public class PdfToPpt implements ProcessorFactory {
 
 	private static final class DefaultConversionProcessor implements ConversionProcessor {
 		private final File output;
-		private PDDocument doc;
+		private final PDDocument doc;
 		private final ExecutorService executor = Executors.newSingleThreadExecutor();
 		private volatile ConversionCallback callback;
 
